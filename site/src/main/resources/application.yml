@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:13306/shoppingmall?zeroDateTimeBehavior=convertToNull&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+    username: root
+    password: gusdn0110
+
+  # jpa
+  jpa:
+    open-in-view: false
+    defer-datasource-initialization: true
+    hibernate.ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+      hibernate.default_batch_fetch_size: 100
+    sql.init.mode: always
